@@ -70,11 +70,11 @@
                     <div class="col-xs-1"></div>
                 </div>
             </div>
-            <footer class="footer navbar-fixed-bottom">
+            <!--<footer class="footer navbar-fixed-bottom">
                 <div class="container">
                     <p class="text-capitalize">Produced by Jiaming NI</p>
                 </div>
-            </footer>
+            </footer>-->
             <!-- Bootstrap Core JavaScript -->
             <script src="js/bootstrap.min.js"></script>
     </body>

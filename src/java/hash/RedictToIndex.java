@@ -34,6 +34,7 @@ public class RedictToIndex extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        // redict to indext.jsp
         String nextView = "index.jsp";
         RequestDispatcher view = request.getRequestDispatcher(nextView);
         view.forward(request, response);

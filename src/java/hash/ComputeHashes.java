@@ -44,6 +44,7 @@ public class ComputeHashes extends HttpServlet {
         // get the String 
         String string = request.getParameter("string");
         
+        // null case handle
         if (string == null || string.length() == 0) {
             RequestDispatcher view = request.getRequestDispatcher("index.jsp");
             view.forward(request, response);
@@ -52,15 +53,17 @@ public class ComputeHashes extends HttpServlet {
         // determine which hash function should be used
         String hashFunction = request.getParameter("hashFunction");
         
+        // call model functions
         byte[] hashBytes = model.getHashValue(string, hashFunction);
         String hex = model.hexParse(hashBytes);
         String base = model.base64Parse(hashBytes);
         
-        
+        // set attribute of request
         request.setAttribute("hex", hex);
         request.setAttribute("base", base);
         String nextView = "result.jsp";
         
+        // redict
         RequestDispatcher view = request.getRequestDispatcher(nextView);
         view.forward(request, response);
     }
