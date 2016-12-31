@@ -7,7 +7,7 @@ Simple Web based HashFunction Application using MVC framework.  #Java #Bootstrap
 
 采用 MVC 模式：<br>
 1. Model 中写完成哈希算法的流程 <br>
-2. View 用 JSP 完成 <br>:
+2. View 用 JSP 完成: <br>
     index.jsp 页面来提交字符串. <br>
     result.jsp 页面来展示哈希结果. <br>
 3. Controller 中写 Servlet<br>
