@@ -1,6 +1,8 @@
 # DS-Project1-HashFunction
 
-Simple Web based HashFunction Application using MVC framework.  #Java #Bootstrap
+Simple Web based HashFunction Application using MVC framework.  #Java #Bootstrap #JSP
+
+Netbeans + JSP + bootstrap
 
 一个简单的 web application 实现以下功能：
 
